@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Mz Application</string>
+    <string name="first_android">First Android</string>
+
+    <string name="tv_test1">test1</string>
+    <string name="tv_1">t1</string>
+    <string name="tv_2">t2</string>
+    <string name="tv_3">t3</string>
+    <string name="pmd">跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯</string>
+
+    <string name="btn_1">按钮1</string>
+    <string name="btn_2">按钮2</string>
+    <string name="btn_3">按钮3</string>
+
 </resources>
