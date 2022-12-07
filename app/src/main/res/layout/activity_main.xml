@@ -24,5 +24,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="goto Button" />
+
+        <Button
+            android:id="@+id/btn_editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Text" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

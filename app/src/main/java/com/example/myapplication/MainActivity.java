@@ -11,15 +11,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtn_TextView,mBtn_Button;
+    private Button mBtn_TextView,mBtn_Button,mBtn_EditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this,"cnm sb Android",Toast.LENGTH_SHORT).show();
-        mBtn_TextView =(Button) findViewById(R.id.btn_textview);
 
+        mBtn_TextView =(Button) findViewById(R.id.btn_textview);
         mBtn_TextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,11 +29,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mBtn_Button =(Button) findViewById(R.id.btn_button);
-
         mBtn_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(MainActivity.this,ButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtn_EditText=(Button) findViewById(R.id.btn_editext);
+        mBtn_EditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,EditTextActivity.class);
                 startActivity(intent);
             }
         });

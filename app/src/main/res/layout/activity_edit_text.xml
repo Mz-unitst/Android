@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTextActivity">
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="73dp"
+        android:drawableLeft="@drawable/username_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/et_username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_username"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="19dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/pwd_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/et_pwd"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pwd"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/btn_login" />
+</RelativeLayout>
