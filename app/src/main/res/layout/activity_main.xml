@@ -36,5 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GOTO RadioButton" />
+
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
