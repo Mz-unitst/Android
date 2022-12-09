@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtn_TextView,mBtn_Button,mBtn_EditText,mBtn_RadioButton,mBtn_CheckBox;
+    private Button mBtn_TextView,mBtn_Button,mBtn_EditText,mBtn_RadioButton,mBtn_CheckBox,mBtn_ImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn_EditText=(Button) findViewById(R.id.btn_editext);
         mBtn_RadioButton=(Button) findViewById(R.id.btn_radiobutton);
         mBtn_CheckBox=(Button) findViewById(R.id.btn_checkbox);
+        mBtn_ImageView=(Button) findViewById(R.id.btn_imageview);
         setListeners();
         }
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn_EditText.setOnClickListener(onClick);
         mBtn_TextView.setOnClickListener(onClick);
         mBtn_CheckBox.setOnClickListener(onClick);
+        mBtn_ImageView.setOnClickListener(onClick);
     }
     private class OnClick implements  View.OnClickListener{
         @Override
@@ -54,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_checkbox:
                     intent=new Intent(MainActivity.this,CheckBoxActivity.class);
+                    break;
+                case R.id.btn_imageview:
+                    intent=new Intent(MainActivity.this,ImageViewActivity.class);
                     break;
             }
             startActivity(intent);
